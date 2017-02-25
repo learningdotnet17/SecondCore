@@ -240,3 +240,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/src/SecondCore/wwwroot/lib/jquery-validation
+/src/SecondCore/wwwroot/lib/jquery-validation-unobtrusive
+/SecondCore/
