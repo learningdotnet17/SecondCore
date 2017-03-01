@@ -1,0 +1,8 @@
+{
+  "MailSettings": {
+    "ToAddress": "blah@blah.com"
+  },
+  "ConnectionStrings": {
+    "CoreContextConnection": "Server=(localdb)\\ProjectsV13;Database=CoreDb;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  }
+}
