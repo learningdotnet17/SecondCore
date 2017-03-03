@@ -24,6 +24,16 @@ namespace SecondCore.Models
             _context.Add(trip);
         }
 
+        public void AddStop(string tripName, Stop stop)
+        {
+            var trip = GetTripByName(tripName);
+            if (trip != null)
+            {
+                trip.Stops.Add(stop);
+                _context.Stops.Add(stop);
+            }
+        }
+
         public IEnumerable<Trip> GetAllTrips()
         {
             _logger.LogInformation("Getting all Trips from the database");

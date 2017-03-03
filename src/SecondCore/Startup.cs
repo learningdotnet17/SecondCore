@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using SecondCore.Models;
 using AutoMapper;
 using SecondCore.Controllers.Api;
+using SecondCore.ViewModels;
 
 namespace SecondCore
 {
@@ -50,6 +51,7 @@ namespace SecondCore
             Mapper.Initialize(config =>
             {
                 config.CreateMap<TripViewModel, Trip>().ReverseMap();
+                config.CreateMap<StopViewModel, Stop>().ReverseMap();
             });
 
             if (env.IsEnvironment("Development"))
